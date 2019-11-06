@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
 
@@ -19,11 +19,10 @@
 </head>
 
 <body>
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#" id="libras_lead">CurioLibras</a>
+      <a class="navbar-brand" href="#" onclick="curiosidades()" id="libras_lead">CurioLibras</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,28 +35,28 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sobre.html">Sobre</a>
+            <a class="nav-link" href="quiz.html">Quiz</a>
           </li>
           <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li> -->
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="quiz2.html">Quiz Acessível</a>
           </li> -->
         </ul>
       </div>
-    </div>
   </nav>
 
   <!-- Header -->
   <header class="bg-primary py-5 mb-5">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
-        <div class="col-lg-12">
+        <div class="col-lg-8">
           <h1 class="display-4 text-white mt-5 mb-2">Projeto CurioLibras</h1>
           <p class="lead mb-5 text-white-50">Projeto que visa trazer o IFFar, Libras e a internet juntos</p>
-          <span id="libras_lead" class="lead mb-5 text">Projeto que visa trazer o IFFar, Libras e a internet
-            juntos</span>
+        </div>
+        <div class="col-lg-4" style="margin: auto; display: inline-block">
+          <video width="320px" alt="Sobre o Projeto" controls>
+            <source src="./videos/sinal.mp4" type="video/mp4">
+          </video>
+          <p class="text-center" style="color: white; font-size: 20px;">Sinal CurioLibras</p>
         </div>
       </div>
     </div>
@@ -65,89 +64,54 @@
 
   <!-- Page Content -->
   <div class="container">
-
     <div class="row">
       <div class="col-md-11 mb-5">
         <h2>Já pensou quantos projetos desenvolvidos no IFFar <i>campus</i> Panambi não chegam para pessoas surdas?</h2>
-        <h2 id="libras_lead">Já pensou quantos projetos desenvolvidos no IFFar <i>campus</i> Panambi não chegam para
-          pessoas surdas?</h2>
         <hr>
-        <!-- <p></p> -->
         <p>Este projeto visa tornar algumas informações referentes ao <i>campus</i> na Língua Brasileira de Sinais</p>
         <!-- <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a> -->
       </div>
-      <!-- <div class="col-md-4 mb-5">
-        <h2>Contact Us</h2>
-        <hr>
-        <address>
-          <strong>Start Bootstrap</strong>
-          <br>3481 Melrose Place
-          <br>Beverly Hills, CA 90210
-          <br>
-        </address>
-        <address>
-          <abbr title="Phone">P:</abbr>
-          (123) 456-7890
-          <br>
-          <abbr title="Email">E:</abbr>
-          <a href="mailto:#">name@example.com</a>
-        </address>
-      </div> -->
     </div>
-    <!-- /.row -->
-
     <div class="row">
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <!-- <img class="card-img-top" src="http://placehold.it/300x200" alt=""> -->
-          <img class="card-img-top" src="./assets/LiveRelievedAfricangoldencat-size_restricted.gif" alt="">
-          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/u4B_ls2GPxk" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-          <div class="card-body">
-            <h4 class="card-title">Apresentação do projeto</h4>
-            <h4 class="card-title" id="libras_lead">Apresentação do projeto</h4>
-            <p class="card-text">Vídeo legendado.</p>
-            <p class="card-text" id="libras_lead">Vídeo legendado.</p>
+      <div class="container testimonial-group">
+        <div class="row text-center">
+          <div class="card h-100">
+            <video class="card-img-top" alt="Sobre o Projeto" controls>
+              <source src="./videos/pj.mp4" type="video/mp4">
+            </video>
+            <div class="card-body">
+              <h4 class="card-title">Apresentação do projeto</h4>
+              <p class="card-text">Vídeo legendado.</p>
+            </div>
           </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+          <div class="card h-100">
+            <video class="card-img-top" alt="Sobre o IFFar e o campus" controls>
+              <source src="./videos/iffar.mp4" type="video/mp4">
+            </video>
+            <div class="card-body">
+              <h4 class="card-title">Apresentação do IFFar e o <i>campus</i> Panambi</h4>
+              <p class="card-text">Vídeo legendado.</p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <!-- <img class="card-img-top" src="http://placehold.it/300x200" alt=""> -->
-          <img class="card-img-top" src="./assets/LiveRelievedAfricangoldencat-size_restricted.gif" alt="">
-          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/u4B_ls2GPxk" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-          <div class="card-body">
-            <h4 class="card-title">Apresentação do <i>campus</i></h4>
-            <h4 class="card-title" id="libras_lead">Apresentação do <i>campus</i></h4>
-            <p class="card-text">Vídeo legendado.</p>
-            <p class="card-text" id="libras_lead">Vídeo legendado.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
+          <div class="card h-100">
+            <video class="card-img-top" alt="Notícias" controls>
+              <source src="./videos/news.mp4" type="video/mp4">
+            </video>
+            <div class="card-body">
+              <h4 class="card-title">Projetos e eventos em andamento do <i>campus</i> </h4>
+              <p class="card-text">Vídeo legendado.</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-5">
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/300x200" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus
-              neque.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Find Out More!</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.row -->
 
+      <div class="container text-right">
+        <p><a href="#">Mais vídeos >></a></p>
+      </div>
+      <!-- /.row -->
+    </div>
   </div>
+
   <!-- /.container -->
 
   <!-- Footer -->
@@ -163,8 +127,9 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./ownjs.js"></script>
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
